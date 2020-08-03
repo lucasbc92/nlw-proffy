@@ -7,6 +7,7 @@ import studyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
+import './styles.css';
 
 const Landing = () => {
   return (
@@ -28,9 +29,9 @@ const Landing = () => {
             <img src={studyIcon} alt="Study" />
             Study
           </a>
-          <a href="/" className="give-lessons">
-            <img src={giveClassesIcon} alt="Give Lessons" />
-            Give Lessons
+          <a href="/" className="give-classes">
+            <img src={giveClassesIcon} alt="Give Classes" />
+            Give Classes
           </a>
         </div>
 
