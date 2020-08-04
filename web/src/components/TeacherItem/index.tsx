@@ -24,12 +24,12 @@ const TeacherItem = () => {
           <strong>R$ 50,00</strong>
         </p>
         <button type="button">
-          <img src={whatsappIcon} alt="WhatsApp"/>
+          <img src={whatsappIcon} alt="WhatsApp" />
           Contact
         </button>
       </footer>
     </article>
   );
-}
+};
 
 export default TeacherItem;

@@ -4,7 +4,6 @@ import TeacherItem from '../../components/TeacherItem';
 
 import './styles.css';
 
-
 const TeacherList = () => {
   return (
     <div id="page-teacher-list" className="container">
