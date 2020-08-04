@@ -7,6 +7,6 @@ const TeacherForm = () => {
       <PageHeader title="How amazing that you want to give classes." />
     </div>
   );
-}
+};
 
 export default TeacherForm;
