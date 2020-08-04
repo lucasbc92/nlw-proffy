@@ -27,6 +27,7 @@ module.exports = {
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/extensions": ["error", "never"],
       "import/no-unresolved": ["off"],
-      "react/prop-types": ["off"]
+      "react/prop-types": ["off"],
+      "jsx-a11y/label-has-associated-control": ["off"]
   },
 };
