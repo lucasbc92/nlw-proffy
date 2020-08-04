@@ -10,8 +10,8 @@ const users = [
   {name: 'Diego', age: 25}
 ]
 
-app.get('/users', (request, response) => {
-  return response.json(users);
+app.post('/', (request, response) => {
+  return response.json({message: "Hello World"});
 });
 
 app.listen(port, () => {

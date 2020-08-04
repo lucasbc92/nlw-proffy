@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:3333
+@apiKey = Ts1qp4oNE3zcGyAeWMS3uZ675A01mtSa
+@contentType = application/json
+
+### Recipe Puppy API Test
+
+GET http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=1
+Content-Type: {{contentType}}
+
+
+### GIPHY API Test
+
+GET http://api.giphy.com/v1/gifs/search?api_key={{apiKey}}&q=Guacamole Dip Recipe
+Content-Type: {{contentType}}
+
+
+### Post Users
+
+POST {{baseUrl}}/users
+Content-Type: {{contentType}}
+
+{
+  "name": "Robson",
+  "age": 32
+}
+
