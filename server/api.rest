@@ -1,20 +1,8 @@
 @baseUrl = http://localhost:3333
-@apiKey = Ts1qp4oNE3zcGyAeWMS3uZ675A01mtSa
 @contentType = application/json
 
-### Recipe Puppy API Test
 
-GET http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=1
-Content-Type: {{contentType}}
-
-
-### GIPHY API Test
-
-GET http://api.giphy.com/v1/gifs/search?api_key={{apiKey}}&q=Guacamole Dip Recipe
-Content-Type: {{contentType}}
-
-
-### Post Users
+### Create Class
 
 POST {{baseUrl}}/classes
 Content-Type: {{contentType}}
@@ -44,3 +32,23 @@ Content-Type: {{contentType}}
     }
   ]
 }
+
+### List Classes
+
+GET {{baseUrl}}/classes?week_day=1&subject=Chemistry&time=11:00
+Content-Type: {{contentType}}
+
+### Create Connection
+
+POST {{baseUrl}}/connections
+Content-Type: {{contentType}}
+
+{
+  "user_id": 1
+}
+
+### Count Connections
+
+GET {{baseUrl}}/connections
+Content-Type: {{contentType}}
+
