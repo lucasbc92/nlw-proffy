@@ -28,6 +28,7 @@ module.exports = {
       "import/extensions": ["error", "never"],
       "import/no-unresolved": ["off"],
       "react/prop-types": ["off"],
-      "jsx-a11y/label-has-associated-control": ["off"]
+      "jsx-a11y/label-has-associated-control": ["off"],
+      "react/jsx-props-no-spreading": ["off"]
   },
 };
