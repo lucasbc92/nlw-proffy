@@ -1,35 +1,50 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
 
-const TeacherItem = () => {
-  return (
-    <article className="teacher-item">
-      <header>
-        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQF-HBkvKkQU_A/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=q59UONWa6j8IE1uowpiNPM4JLNG4XEMKOpcC9u7-Sy4" alt="Lucas Bueno Cesário" />
-        <div>
-          <strong>Lucas Bueno Cesário</strong>
-          <span>Chemistry</span>
-        </div>
-      </header>
+export interface Teacher {
+  id: number;
+  avatar: string,
+  bio: string,
+  cost: number,
+  name: string,
+  subject: string,
+  whatsapp: string
+}
 
+interface TeacherItemProps {
+  teacher: Teacher
+}
+
+const TeacherItem:React.FC<TeacherItemProps> = ({
+  teacher,
+}) => (
+  <article className="teacher-item">
+    <header>
+      <img src={teacher.avatar} alt={teacher.name} />
+      <div>
+        <strong>{teacher.name}</strong>
+        <span>{teacher.subject}</span>
+      </div>
+    </header>
+
+    <p>
+      {teacher.bio}
+    </p>
+
+    <footer>
       <p>
-        Best chemistry teacher from Florianópolis.
+        Price/hour
+        <strong>R$ {teacher.cost.toFixed(2)}</strong>
       </p>
-
-      <footer>
-        <p>
-          Price/hour
-          <strong>R$ 50,00</strong>
-        </p>
-        <button type="button">
-          <img src={whatsappIcon} alt="WhatsApp" />
-          Contact
-        </button>
-      </footer>
-    </article>
-  );
-};
+      <a href={`https://wa.me/${teacher.whatsapp}`}>
+        <img src={whatsappIcon} alt="WhatsApp" />
+        Contact
+      </a>
+    </footer>
+  </article>
+);
 
 export default TeacherItem;
