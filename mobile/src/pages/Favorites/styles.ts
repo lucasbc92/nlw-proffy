@@ -5,9 +5,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F0F0F7',
   },
-  
+
   teacherList: {
-    marginTop: -60,
+    marginTop: -40,
     
   },
 })
