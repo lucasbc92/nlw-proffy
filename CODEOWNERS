@@ -2,3 +2,4 @@
 *.tsx @lucasbc92
 *.json @lucasbc92
 /.docker/ @lucasbc92
+/ @lucasbc92
