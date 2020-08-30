@@ -28,6 +28,8 @@ const TeacherItem:React.FC<TeacherItemProps> = ({
     });
   };
 
+  const whatsappMessage = `Hello, ${teacher.name}. I came for your ${teacher.subject} class.`;
+
   return (
     <article className="teacher-item">
       <header>
@@ -51,7 +53,8 @@ const TeacherItem:React.FC<TeacherItemProps> = ({
           target="_blank"
           rel="noopener noreferrer"
           onClick={createNewConnection}
-          href={`https://wa.me/${teacher.whatsapp}?text=Hello, ${teacher.name}. I came for your ${teacher.subject} class.`}>
+          href={`https://wa.me/${teacher.whatsapp}?text=${whatsappMessage}`}
+        >
           <img src={whatsappIcon} alt="WhatsApp" />
           Contact
         </a>

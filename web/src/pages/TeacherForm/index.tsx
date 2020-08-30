@@ -149,7 +149,7 @@ const TeacherForm = () => {
             />
             <Input
               name="cost"
-              label="Cost of your lesson time"
+              label="Price/hour of your lesson"
               value={cost}
               onChange={(e) => { setCost(e.target.value); }}
             />
